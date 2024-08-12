@@ -1,0 +1,70 @@
+:root {
+  --main-solor: #a73838;
+}
+.root {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+  color: #333;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttonRezet {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--main-solor);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonRezet:hover {
+  background-color: #45a049;
+}
+
+.indicatorContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.indicator {
+  width: 15%;
+  height: 12px;
+  background-color: #ccc;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.indicator.answered {
+  background-color: #000;
+}
+
+.indicator.active {
+  background-color: var(--main-solor);
+}
